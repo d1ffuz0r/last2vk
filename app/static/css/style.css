@@ -1,0 +1,129 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+#main{
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica;
+}
+#main #header{
+	height: 70px;
+	width: 100%;
+	background: url(../images/sprite-last.png) repeat-x 0 0;
+}
+#main #header #head{
+	width: 800px;
+	margin: 0 auto;
+}
+#main #header #head #logotype-last{
+	width: 84px;
+	height: 32px;
+	background: url(../images/sprite-last.png) no-repeat -14px -160px;
+	float: left;
+}
+#main #header #head #logotype-to{
+	float: left;
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+#main #header #head #logotype-vk{
+	width: 35px;
+	height: 21px;
+	background: url(../images/vk.png) no-repeat 0 0;
+	float: left;
+	margin-top: 10px;
+	margin-left: 6px;
+}
+#main #header #head a{
+	text-decoration: none;
+}
+#main #header #head h4{
+	float: right;
+	margin: 15px 0 0 0;
+	padding: 0;
+	color: #fff;
+}
+#main #content{
+	width: 800px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+#main #content #form{
+	text-align: center;
+}
+#main #content #form #getall label{
+	color: red;
+	font-size: 36px;
+}
+#main #content #form #getall label a{
+	color: red;
+}
+#main #content #form #getall #username{
+	width: 220px;
+	height: 44px;
+	border: none;
+	background: url(../images/text.png) no-repeat;
+	font-size: 40px;
+	padding-left: 5px;
+}
+#main #content #form #getall #submit{
+	width: 220px;
+	height: 47px;
+	border: none;
+	background: url(../images/button.png) no-repeat;
+	cursor: pointer;
+}
+#main #content #result #res{
+	margin: 0;
+	padding: 0;
+	width: 798px;
+	margin-bottom: 10px;
+	text-align: justify;
+	border: 1px dotted black;
+}
+#main #content #result .loading{
+	width: 100%;
+}
+#main #content #result .loading div{
+	margin: 0 auto;
+	width: 100px;
+}
+#main #footer{
+	bottom: 0px;
+	width: 100%;
+	position: fixed;
+}
+#main #footer #foot{
+	height: 42px;
+	width: 800px;
+	margin: 0 auto;	
+	background: url(../images/sprite-last.png) repeat-x 0px -260px;
+}
+#main #footer #foot #author{
+	float: left;
+	margin: 6px 0 0 6px;
+}
+#main #footer #foot #author a{
+	color: #000;
+	text-decoration: none;
+}
+#main #footer #foot #contacts{
+	
+}
+#main #footer #foot #povered-by{
+	margin: 6px 6px;
+	float: right;
+}
+#main #footer #foot #counter{
+	
+}
+#main #footer #foot #like{
+	float: right;
+	margin-top: 6px;
+}
