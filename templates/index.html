@@ -4,18 +4,18 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Last.fm to Vk</title>
-		<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<meta name="description" content="Получить список музыки из Last.fm для вконтакте" /> 
 <meta name="keywords" content="Ласт.фм, Last.fm, Музыка для вконтакте, vkontakte.ru, получить список музыки для вконтакте, бесплатный список музыки для вконтакте" />
-		<script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+		<script src="/static/js/jquery-1.6.2.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
 		<script type="text/javascript">
 			function send(){
 				var data = $('#username').val()
-				$("#result").append('<div class="loading"><div><img src="/images/loading.gif" alt="Загрузка"/></div></div>');
+				$("#result").append('<div class="loading"><div><img src="/static/images/loading.gif" alt="Загрузка"/></div></div>');
 				$.ajax({
 					type: "POST",
-					url: "/get",
+					url: "/",
 					data: "username="+data,
 					success: function(html) {
 						$("#result").empty();
@@ -23,9 +23,6 @@
 					}
 				});
 			}
-		</script>
-		<script type="text/javascript">
-		  VK.init({apiId: API_ID, onlyWidgets: true});
 		</script>
 	</head>
 	<body>
@@ -68,10 +65,6 @@
 					</div>
 					<div id="like">
 						<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="d1ffuz0r">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-						<div id="vk_like"></div>
-						<script type="text/javascript">
-						VK.Widgets.Like("vk_like", {type: "mini"});
-						</script>
 					</div>
 				</div>
 			</div>
